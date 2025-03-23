@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+/* In your index.css or App.css */
+.map-container iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
