@@ -3,6 +3,10 @@ import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import MilanImage from "@/images/Milan.jpg";
+import AarushImage from "@/images/Aarush.jpg";
+import SrmrunImage from "@/images/SrmrunImage.jpg";
+import ieee from "@/images/ieee.jpg";
 
 // Custom Next Arrow
 const NextArrow = ({ onClick }) => (
@@ -49,10 +53,13 @@ const Carousel = () => {
     )
   };
 
+
   const images = [
-    "https://source.unsplash.com/1200x600/?college,building",
-    "https://source.unsplash.com/1200x600/?university,campus",
-    "https://source.unsplash.com/1200x600/?students,event"
+    "",
+    MilanImage, // Local image
+    AarushImage,  // Local image
+    SrmrunImage,
+    ieee
   ];
 
   return (
@@ -62,7 +69,7 @@ const Carousel = () => {
           <div key={idx}>
             <img
               src={img}
-              alt={`Slide ${idx + 1}`}
+              alt={`Slide ${idx}`}
               className="w-full h-[400px] object-cover rounded-xl shadow-md"
             />
           </div>
@@ -73,3 +80,4 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
